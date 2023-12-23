@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="shortcut icon" href="/assets/favicon.ico" />
+		<link href="css/style.css" rel="stylesheet" />
+		<title>Memory tastes like iron</title>
+	</head>
+
+	<body>
+		<div id="loading">
+			<h1 id="loading-text">Loading...</h1>
+		</div>
+
+		<div id="game">
+			<div id="nav">
+				<div id="stats-open" class="btn btn-square" title="Character" data-open="#stats">♥</div><div id="inventory-open" class="btn btn-square" title="Inventory" data-open="#inventory">i</div><div id="look-button" class="btn btn-square" title="Look At">☌</div><div id="mainmenu-open" class="btn btn-square" title="Menu" data-open="#mainmenu">≡</div>
+			</div>
+
+			<div id="hud">
+				<div>⚙  <span id="hud-suit">100</span></div>
+				<div>♥  <span id="hud-health">100</span></div>
+				<div>O₂ <span id="hud-oxygen">100</span></div>
+				<div>⚡  <span id="hud-energy">100</span></div>
+			</div>
+
+			<div id="quickslots">
+				<div id="equipped" class="btn btn-square"></div>
+			</div>
+
+			<div id="messages"></div>
+
+			<div id="stats" class="modal">
+				<div id="stats-main" class="menu">
+					<div id="stats-close" class="btn btn-square right" data-close="#stats">✕</div>
+					<h1>Status</h1>
+					<table>
+						<tr><th>Ethereal Suit</th><th></th></tr>
+						<tr><td>&nbsp;</td><td></td></tr>
+						<tr><td>☾ Condition:    </td><td><span id="stats-suit"></span> <span id="stats-suit-detail"></span></td></tr>
+						<tr><td>♥ Health:   </td><td><span id="stats-health"></span></td></tr>
+						<tr><td>O₂ Reserve: </td><td><span id="stats-oxygen"></span></td></tr>
+						<tr><td>⚡ Energy:    </td><td><span id="stats-energy"></span></td></tr>
+						<tr><td>&nbsp;</td><td></td></tr>
+					</table>
+					<table>
+						<tr><th>Environment</th><th></th></tr>
+						<tr><td>&nbsp;</td><td></td></tr>
+						<tr><td>Weather:    </td><td><span id="stats-weather"></span></td></tr>
+						<tr><td>Atmosphere: </td><td><span id="stats-atmosphere"></span></td></tr>
+						<tr><td>O₂ Lasts:   </td><td><span id="stats-oxygen-time"></span> turns</td></tr>
+						<tr><td>&nbsp;</td><td></td></tr>
+						<tr><td>&nbsp;</td><td></td></tr>
+					</table>
+				</div>
+			</div>
+
+			<div id="inventory" class="modal">
+				<div id="inventory-main" class="menu">
+					<div id="inventory-close" class="btn btn-square right" data-close="#inventory">✕</div>
+					<h1>Inventory</h1>
+					<div id="inventory-capacity">Capacity</div>
+					<div id="inventory-items"></div>
+					<div id="inventory-details"></div>
+					<div id="inventory-actions">
+						<div id="inventory-equip" class="btn btn-text">✔ Equip</div>
+						<div id="inventory-use" class="btn btn-text">▸ Use</div>
+						<div id="inventory-drop" class="btn btn-text">✖ Drop</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="shop" class="modal">
+				<div id="shop-main" class="menu">
+					<div id="shop-close" class="btn btn-square right" data-close="#shop">✕</div>
+					<h1>Bench</h1>
+					<p>Distant memories: <span id="shop-money"></span></p>
+					<div id="shop-items"></div>
+					<p id="shop-details"></p>
+					<div id="shop-actions">
+						<div id="shop-ok" class="btn btn-text">✔ Create</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="mainmenu" class="modal">
+				<div id="mainmenu-main" class="menu">
+					<div id="mainmenu-close" class="btn btn-square right" data-close="#mainmenu">✕</div>
+					<h1>Menu</h1>
+					<div id="mainmenu-fullscreen" class="btn btn-text">⇱ Fullscreen</div>
+					<div id="mainmenu-howto" class="btn btn-text">♖ Instructions</div>
+					<div id="mainmenu-code" class="btn btn-text">✏ Source Code</div>
+					<div id="mainmenu-bugs" class="btn btn-text">⚐ Bug Reports</div>
+					<div id="mainmenu-credits" class="btn btn-text">✯ Credits</div>
+					<div id="mainmenu-restart" class="btn btn-text">↻ Restart</div>
+					<p class="footer">Copyright &copy; 2023 Judit Karamazov</p>
+				</div>
+			</div>
+
+			<div id="info" class="modal">
+				<div id="info-main" class="menu">
+					<div id="info-close" class="btn btn-square right" data-close="#info">✕</div>
+					<h1>Again?</h1>
+					<p></p>
+					<p>
+						That thing,
+						<span style="color:#43a699; font-size:30px; font-weight: 800;">♘</span>, might bring 
+						peace to our sleep.
+					</p>
+					<p>Memories... can you smell them, too? Did you hear them?</p>
+					<p>I don't remember anymore. Memory - what a concept. Tastes like iron,
+						night, after night, after...
+					</p>
+					<p>Navigate. Click. Touch. Up, and left, and click, and the smell of...</p>
+					<div>
+						<div id="info-ok" class="btn btn-text">✔ Huh...</div>
+						<div id="info-fullscreen" class="btn btn-text">⇱ Fullscreen</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="death-screen" class="modal">
+				<div class="dark-souls-menu">
+					<h1>YOU DIED</h1>
+					<p>You confronted <span id="death-kills"></span> scars
+						and endured for <span id="death-turns"></span> steps of memory.</p>
+					<p>Your brain consumed <span id="death-oxygen"></span> units of oxygen
+						and required <span id="death-energy"></span> units of vitality.</p>
+					<div>
+						<div id="death-restart" class="died-btn btn btn-text">↻ Restart</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="win-screen" class="modal">
+				<div class="menu">
+					<h1>You went through an entire night.</h1>
+					<p>It took you <span id="win-turns"></span> turns,
+					<span id="win-oxygen"></span> oxygen and <span id="win-energy"></span>
+					energy to do it. Quite a miracle.
+					<p>While at it, you managed to defeat <span id="win-kills"></span> of your fears.
+					<p>You can now try to go continue as this loop never truly ends.</p>
+					<div>
+						<div id="win-continue" class="btn btn-text">➤ Continue</div>
+						<div id="win-restart" class="btn btn-text">↻ Restart</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="audio-controller">
+			<audio id="menu-music" loop><source src="assets/sounds/001.ogg" type="audio/ogg"></audio>
+			<audio id="main-music" loop><source src="assets/sounds/002.ogg" type="audio/ogg"></audio>
+			<audio id="menu-effect"><source src="assets/sounds/menu-effect.ogg" type="audio/ogg"></audio>
+			<audio id="item-effect"><source src="assets/sounds/item-effect.ogg" type="audio/ogg"></audio>
+			<audio id="equip-effect"><source src="assets/sounds/equip-effect.ogg" type="audio/ogg"></audio>
+			<audio id="entrance-effect"><source src="assets/sounds/entrance-effect.ogg" type="audio/ogg"></audio>
+			<audio id="attack-effect"><source src="assets/sounds/attack-effect.ogg" type="audio/ogg"></audio>
+			<audio id="attacked-effect"><source src="assets/sounds/attacked-effect.ogg" type="audio/ogg"></audio>
+			<audio id="death-effect"><source src="assets/sounds/death-effect.ogg" type="audio/ogg"></audio>
+		</div>
+
+		<script>
+			var CONFIG = {
+				fontFamily: "DejaVu Sans Mono",
+				touch: (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+			}
+		</script>
+		<script src="libs/rot.min.js"></script>
+		<script src="libs/fontdetect.min.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/audio.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/ui.js"></script>
+		<script src="js/controls.js"></script>
+		<script src="js/item.js"></script>
+		<script src="js/actor.js"></script>
+		<script src="js/dungeon.js"></script>
+		<script src="js/mapgen.js"></script>
+		<script src="js/world.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
