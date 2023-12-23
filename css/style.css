@@ -1,0 +1,239 @@
+@font-face {
+	font-family: 'DejaVu Sans Mono';
+	src:
+		url('DejaVuSansMono.woff2') format('woff2'),
+		url('DejaVuSansMono.woff') format('woff'),
+		url('DejaVuSansMono.ttf') format('truetype');
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	color: #e7eef4;
+	background-color: #161a1b;
+	font-family: 'DejaVu Sans Mono', monospace;
+	font-size: 14px;
+}
+
+:-webkit-full-screen {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background: none;
+}
+
+:fullscreen {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.footer {
+	font-size: 12px;
+	text-align: center;
+	color: #e7eef4;
+	margin-top: 350px;
+}
+
+canvas {
+	position: absolute;
+	z-index: -1;
+}
+
+#loading {
+	text-align: center;
+}
+
+#game { 
+	display: none; 
+}
+
+#messages {
+	position: fixed;
+	bottom: 0;
+	max-width: 70%;
+	padding: 8px 12px;
+	text-shadow: #161a1b 0 0 2px;
+	background-color: #4e5d63a7;
+	border-radius: 10px;
+	pointer-events: none;
+}
+
+.msg0 { color: #fff; }
+.msg1 { color: #999; }
+.msg2 { color: #777; }
+.msg3 { color: #555; }
+.msg4 { color: #333; }
+
+.right { float: right; }
+.left { float: left; }
+
+.btn {
+	display: inline-block;
+	height: 55px;
+	line-height: 55px;
+	margin: 6px 4px 3px 0px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.btn-no-touch:hover {
+	text-shadow: #43a699 0 0 20px;
+}
+
+.btn:active {
+	-webkit-transform: scale(0.85);
+	-moz-transform: scale(0.85);
+	-ms-transform: scale(0.85);
+	-o-transform: scale(0.85);
+	transform: scale(0.85);
+}
+
+.btn-disabled {
+	pointer-events: none;
+	color: #444 !important;
+}
+
+.btn-square {
+	width: 50px;
+	font-size: 40px;
+}
+
+.btn-text {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 24px;
+}
+
+#nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+#look-button {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+#hud {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 6px;
+	font-size: 14px;
+	text-shadow: rgb(59, 58, 58) 0 0 2px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+}
+
+#hud > div {
+	white-space: pre;
+}
+
+#quickslots {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(17, 17, 17, 0.947);
+	text-align: center;
+	z-index: 1000;
+	padding: 80px;
+}
+
+h1 {
+	font-size: 2em;
+	padding: 150px 0 20px 0;
+	margin: 0;
+}
+
+table {
+	display: inline-block;
+	margin-bottom: 6px;
+	margin-right: 10px;
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	min-width: 150px;
+}
+
+/* Inventory */
+
+#inventory-items {
+	max-height: 40%;
+}
+
+#inventory-details {
+	margin: 10px 0;
+}
+
+.dark-souls-menu {
+    text-align: center;
+    padding: 20px;
+	margin: 3% auto;
+	width: 90%;
+	max-width: 600px;
+}
+
+.dark-souls-menu h1 {
+    font-family: 'Old English Text MT', serif;
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.dark-souls-menu p {
+    margin-bottom: 10px;
+}
+
+.died-btn {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 8px 16px;
+	margin-top: 25px;
+    cursor: pointer;
+    border: 1px solid #d9534f;
+}
+
+.died-btn:hover {
+    background-color: #c9302c;
+}
+
+#win-screen {
+	background-color:  #43a69970;
+	text-align: center;
+}
+
+#win-screen > div {
+	top: 35%;
+}
+
+#audio-controller {
+	display: none;
+}
