@@ -87,6 +87,10 @@ Turns out that everything was _indeed_ about words and languages, two concepts s
 
 Keep in mind that the **base** is _still_ part of a never-ending loop of pain, though.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JuditKaramazov/TCA-rogueMazov/main/assets/github/TCA-rogueMazov-06.png" alt="MTLI original asset.">
+</p>
+
 ### Themes: we are nothing but words
 
 Space adventures, complex and overwhelming RPGs providing you with tons of equipment, and items, and interactions, and more items... Before games like `Hades` dared offering different ways of exploring the narrative possibilities of the genre, that was basically it. In fact, even imagining to keep people to live on the edge between triumph and disaster with permanent death mechanics represents an unthinkable reality nowadays. However, and since the story itself focuses on the **positive and negative power of words**, the impact of their **psycholigal repercusions** in our daily routines, **mental disorders** (such as PTSD, depression, or derrealization), and the feeling of **being trapped in the same, long day** while having to deal with our constant (and invisible) inner fights, it would have been nearly unacceptable to choose a different way of representing _this_ specific reality.
@@ -94,6 +98,51 @@ Space adventures, complex and overwhelming RPGs providing you with tons of equip
 A **reality about words represented through words** - or characters, as we'll explain later. This is how a philologist tries to access the darkest corners of her mind, but the meaning behind this is completely up to you, in the end. Why? As you probably noticed now that this one became a flourishing genre again, the roguelike format is **notoriously hard to build storytelling** around. While permadeath creates a higher sense of immersion, it vaporizes the tension built up through the run whenever the player dies. Traditional linear narratives are impossible to tell, as running through the same scenes or dialogue over and over destroys their emotional impact or importance. These reasons always made the genre rely on their gameplay instead of a strong narrative or emotional appeal, and here's why I chose to focus my energy on building a **certain mood** related to very specific psychological disorders rather than a competent story.
 
 Do not take it as a narrative moment of introspection. If anything, it's simply a way of feeling and understanding reality.
+
+## Map: The art of algorithms
+
+Most games are built either mostly or entirely by hand, with artists and developers designing every character, location and enemy. However, some games choose a different path: instead of crafting every element of the game by hand, they create an algorithm that will automatically generate the world of the game, including the layout of the map, placement of items, distribution of enemies, and environmental conditions. "Oh, no... the AI is here!", it indeed is, guys, but that wasn't my point at all. What I meant to express was that _this process_ is known as **procedural generation**, and although it first appeared in the late 1970s, this style of game development has seen a bit of a resurgence in recent days. All in all, procedural generation is an extremely powerful and useful tool for game development, but the truth is that it can also be easily abused. In the right game, which can truly benefit from the variety granted by these types of systems, procedural generation is an invaluable asset; in the wrong game, however, it can be used as a crutch to simply generate content without regards to quality.
+
+In this specific case, this became a a playground where I could explore new ideas, but my intention was never to create the ultimate roguelike. What's interesting, to my eye, is that, behind the scenes, intricate algorithms work tirelessly to craft a diverse and challenging world for players to explore, and uncovering this form of player progression and difficulty scaling became a temptation that I couldn't avoid.
+
+If you feel curious about the process itself, I implemented [rot.js](https://www.npmjs.com/package/rot-js) as it was designed to provide help with traditional chores of roguelike programming. Also, and if you'd want to see how each map actually looks like, feel free to uncomment both [main.js](js/main.js):
+
+```javascript
+// main.js
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'm' || event.key === 'M') {
+    world.dungeon.displayMap()
+    }
+  })
+```
+
+and [dungeon.js](js/dungeon.js)  :
+
+```javascript
+// dungeon.js
+Dungeon.prototype.displayMap = function() {
+  console.clear()
+  var mapString = ''
+  
+  for (var j = 0; j < this.height; ++j) {
+    for (var i = 0; i < this.width; ++i) {
+      var x = i
+      var y = j
+      var tile = this.getTile(x, y)
+      var color = tile.color || "#FFFFFF"
+      mapString += tile.ch
+      }
+      mapString += '\n'
+      }
+
+    console.log(mapString)
+```
+
+to get a better picture of what's going on under the hood.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JuditKaramazov/TCA-rogueMazov/main/assets/github/TCA-rogueMazov-07.png" alt="MTLI original asset.">
+</p>
 
 ## Controls
 
