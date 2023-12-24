@@ -93,7 +93,7 @@ var infoMessages = [
 	Always watching over. What a peculiar companion we found ourselves.<br><br>
 	I can't close mine. They won't close. However, the roof keeps watching.
 	The sound keeps watching. And that terrible air.`,
-	`I did became a song, and I thought I have found peace. I became all possible words and combinations.
+	`I did become a song, and I thought I have found peace. I became all possible words and combinations.
 	I closed my eyes, and so did they. But they couldn't heal me in my dream. They couldn't find me in my slumber.`,
 	`But it was never meant to be a "goodbye". Would you like it that way?
 	Perhaps I would like it, too. "See you tomorrow", well. Can you tell what "tomorrow" is, at this point?<br><br>
@@ -101,7 +101,10 @@ var infoMessages = [
 	`We can't touch what can be seen; that's why we will never reach each other.
 	It is fine like this. It must be, according to...<br><br>
 	Tiring. I am tired. Could we please try to see each other? Open, close your...<br><br>
-	I am tired.`
+	I am tired.`,
+	`No. No, of course not. Didn't you notice? Of course not. Open your eyes: it's not a loop.
+	Please, open your eyes. It's not a loop, it's a spiral. Didn't you...? It's not a loop.<br><br>
+	It's not a loop. A spiral. Not a loop. It's a spiral. It's not a loop. It is a spiral.`
 ]
 
 
