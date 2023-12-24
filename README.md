@@ -103,7 +103,8 @@ In the vein of classic roguelikes, the `controls` are fairly simple as well.
 
 - **Movement**: Click or touch the desired **tile** to move your character in that direction.
 - **Interaction**: Click or touch **items**, **enemies**, or **UI elements** to interact with them. This includes actions like picking up items, attacking enemies, and accessing menus.
-*Note: Some inconsistencies have already been detected on mobile devices, related to either visual aspects or sound issues. While I'm already working on resolving them, don't forget that laptops and desktop computers can offer a smooth experience.*
+
+>*Note: Some inconsistencies have already been detected on mobile devices, related to either visual aspects or sound issues. While I'm already working on resolving them, don't forget that laptops and desktop computers can offer a smooth experience.*
 
 ### Keyboard Controls
 
@@ -115,7 +116,9 @@ If you prefer the classic keyboard input combined with your mouse (I am sorry fo
     - <kbd>↓</kbd> (Down)
     - <kbd>←</kbd> (Left)
     - <kbd>→</kbd> (Right)
-    *Note: Moving your character to an item or enemy's position will automatically interact with them.*
+
+    >*Note: Moving your character to an item or enemy's position will automatically interact with them.*
+
 - **Interaction**:
   - **<kbd>I</kbd>**: Open the **Inventory**.
   - **<kbd>Esc</kbd>**: Open the **Main Menu** & **Cancel**.
