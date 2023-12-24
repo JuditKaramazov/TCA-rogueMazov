@@ -54,7 +54,7 @@ Allow me to warn you beforehand, though: even though some features took more tim
 
 "Last Christmas I gave you my heart, but the very last..."
 
-"Eh, Judit... Judit! Is this even serious? You promised you wouldn't dare singing this song. You told yourself _multiple_ times that this empty way of celebrating capitalism was forbidden, and...!" Well, well. What do you want me to say, guys? I assume I am getting old and emotional - especially now that we threw the E3 away, just like we did with some Christmas' hearts. "But weren't we talking about 'The Code Awards', Judit?" Oh, this seasonal event based on [The Game Awards](https://thegameawards.com), you mean? Of course we were, but now that Geoff Keighley's [Summer Games Fest](https://www.summergamefest.com) seems poised to hold the June industry news slot unopposed, I do not truly know if we should celebrate or cry our eyes out together. _Some new information about Hollow Knight Silksong's state could easily change my mind on this, Geoff..._
+"Eh, Judit... Judit! Is this even serious? You promised you wouldn't dare singing this song. You told yourself _multiple_ times that this empty way of celebrating capitalism was forbidden, and...!" Well, well. What do you want me to say, guys? I assume I am getting old and emotional - especially now that we threw the E3 away, just like we did with some Christmas' hearts. "But weren't we talking about 'The Code Awards', Judit?" Oh, this seasonal event based on [The Game Awards](https://thegameawards.com), you mean? Of course we were, but now that Geoff Keighley's [Summer Games Fest](https://www.summergamefest.com) seems poised to hold the June industry news slot unopposed, I do not truly know if we should celebrate or cry our eyes out together. _Some new information about Hollow Knight Silksong's state could easily change my mind regarding this matter, Geoff..._
 
 Because that's the thing, right? We do care about new announcements and blockbusters, but we feel slightly uncomfortable whenever a team takes more space on stage than what the "acceptable" amount of time would be, at least compared to the number of new trailers and "World Premieres". `Wrap it up`, as Geoff himself would say - or accept others to say. Nevertheless, and quoting [Eurogamer.net](https://www.eurogamer.net/the-game-awards-will-never-represent-our-industry-in-the-way-it-needs-so-what-next)'s article on the matter, the only thing that's left to say is that:
 
@@ -64,7 +64,7 @@ Will we, though? If you want my humble opinion, we _did_ change, no matter if ce
 
 "Maturity", what a concept. Now that I can consider myself a mature and serene adult (_or so I hope_), I find it funny to recall the days when I found myself staring to this old TV screen that my brother was using to play _The Legend of Zelda: Ocarina of Time._ Independently of the immense progress this industry has witnessed in the last decades, the truth is that even today I find it soothing to go back to those games many people can't even stand anymore. Generational graphic limits, an overwhelming simplicity, not that much of character development, no online features... that's right. However, if we can afford to accept today's limitations, it would be interesting to understand yesterday's ones - and embrace what it meant to demolish some of those obstacles as well. Because we did overcame quite a lot of them, am I right?
 
-We all did. Not so long ago, and while I was still going through one of my formations, I was terrified when confronting idea of having to go through a JavaScript technical test. These days, it doesn't look as much of a hassle, but the fear paralyzed so fiercely while picturing the many words my mentor could use to express that I didn't pass (spoiler: _I did_), that nothing seemed enough for me to stop practicing and panicking. Now, it's clear that I'd simply check the documentation, practice, practice, practice... and that's all. But that's _today's perspective_; unlike today, yesterday I was indeed scared, _smol_, fragile, and unable to see all the tools I had at my disposal. I was someone who studied humanities during her entire life, after all. "Not good enough for this sector". 
+We all did. Not so long ago, and while I was still going through one of my formations, I was terrified when confronting the idea of having to go through a JavaScript technical test. These days, it doesn't look as much of a hassle, but the fear paralyzed so fiercely while picturing the many words my mentor could use to express that I didn't pass (spoiler: _I did_), that nothing seemed enough for me to stop practicing and panicking. Now, it's clear that I'd simply check the documentation, practice, practice, practice... and that's all. But that's _today's perspective_; unlike today, yesterday I was indeed scared, _smol_, fragile, and unable to see all the tools I had at my disposal. I was someone who studied humanities during her entire life, after all. "Not good enough for this sector". 
 
 In the end, however, and as funny and twisted as it might sound, it was all about `words` - just like `Memory tastes like iron` is, too.
 
@@ -87,7 +87,7 @@ Turns out that everything was _indeed_ about words and languages, two concepts s
 
 Keep in mind that the **base** is _still_ part of a never-ending loop of pain, though.
 
-### Story: we are nothing but words
+### Themes: we are nothing but words
 
 Space adventures, complex and overwhelming RPGs providing you with tons of equipment, and items, and interactions, and more items... Before games like `Hades` dared offering different ways of exploring the narrative possibilities of the genre, that was basically it. In fact, even imagining to keep people to live on the edge between triumph and disaster with permanent death mechanics represents an unthinkable reality nowadays. However, and since the story itself focuses on the **positive and negative power of words**, the impact of their **psycholigal repercusions** in our daily routines, **mental disorders** (such as PTSD, depression, or derrealization), and the feeling of **being trapped in the same, long day** while having to deal with our constant (and invisible) inner fights, it would have been nearly unacceptable to choose a different way of representing _this_ specific reality.
 
@@ -103,6 +103,7 @@ In the vein of classic roguelikes, the `controls` are fairly simple as well.
 
 - **Movement**: Click or touch the desired **tile** to move your character in that direction.
 - **Interaction**: Click or touch **items**, **enemies**, or **UI elements** to interact with them. This includes actions like picking up items, attacking enemies, and accessing menus.
+*Note: Some inconsistencies have already been detected on mobile devices, related to either visual aspects or sound issues. While I'm already working on resolving them, don't forget that laptops and desktop computers can offer a smooth experience.*
 
 ### Keyboard Controls
 
